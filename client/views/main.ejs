@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Here are the awesome quotes!</h2>
+    <% for (var quote of quotes) { %>
+        <h3>Name: <%= quote.name %> </h3>
+        <h3>Quote: <%= quote.quote %> </h3>
+        <p><%= moment(quote.createdAt).fromNow() %></p>
+        <hr>
+    <% } %>
+</body>
+</html>
